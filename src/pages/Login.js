@@ -7,14 +7,18 @@ import {
   Text,
   View,
   StatusBar,
+  TouchableOpacity,
 } from 'react-native'
 
 import Logo from '../components/Logo';
 import Form from '../components/Form';
+import Cadastro from './Cadastro';
 
 export default class Login extends Component<{}>{
-
-   
+    static navigationOptions = {
+        title: 'DiogoPaza Systems',
+      };
+  
 
     render(){
         const { navigate } = this.props.navigation;
@@ -24,7 +28,7 @@ export default class Login extends Component<{}>{
                 <Form type="Login"/>
                 <View style={styles.signupTextCont}>
                     <Text style={styles.signupText}>Você não tem cadastro?</Text>
-                    <Text style={styles.signupButton}>Cadastre-se</Text>
+                    <TouchableOpacity onPress={() => navigate('Cadastro')}><Text style={styles.signupButton}>Cadastre-se</Text></TouchableOpacity>
                 </View>
             </View>
         )

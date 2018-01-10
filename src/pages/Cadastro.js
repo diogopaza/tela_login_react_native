@@ -14,15 +14,16 @@ import Form from '../components/Form';
 
 export default class Cadastro extends Component<{}>{
 
-   
+    static navigationOptions = {
+        title: 'Cadastre-se',
+      };
     render(){
         return(
             <View style={styles.container}>
                 <Logo />
                 <Form type="Cadastro" />
                 <View style={styles.signupTextCont}>
-                    <Text style={styles.signupText}>Já tenho uma conta</Text>
-                    <Text style={styles.signupButton}>Cadastre-se</Text>
+                    
                 </View>
             </View>
         )

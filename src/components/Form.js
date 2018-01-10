@@ -21,7 +21,8 @@ export default class Form extends Component<{}>{
                 <TextInput style={styles.inputBox} 
                     underlineColorAndroid='rgba(0,0,0,0)'
                         placeholder="Email"
-                            placeholderTextColor="#ffffff"/>
+                            placeholderTextColor="#ffffff"
+                           />
                  <TextInput style={styles.inputBox} 
                     underlineColorAndroid='rgba(0,0,0,0)'
                         placeholder="Senha"

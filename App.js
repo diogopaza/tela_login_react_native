@@ -23,6 +23,7 @@ export default class App extends Component<{}> {
           backgroundColor="#1c313a"
           barStyle="light-content"
         />
+        <Routes />
        
       
       </View>
